@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    /* background-color:black; */
+    background-color: gray;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.title{
+    color: aliceblue;
+}
+#error{
+  color: red;
+}
+.input-field h5{
+  color: red;
+}
+
+
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    list-style: none;
+    
+    
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+
+.nav-item{
+    background-color: aliceblue;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+section{
+
+  font-family: Arial, sans-serif;
+  background: radial-gradient(lightblue, white);
+  /* margin: 0; */
+  padding: 0;
+  display: none;
+}
+
+/* #home img{
+  height: 800px;
+  width: 98vw;
+  object-fit: cover;
+  margin-right: 2px;
+}
+#home div{
+  width: 200px;
+  height: 200px;
+} */
+
+
+body #home {
+  background-image: url('../assets/WhatsApp\ Image\ 2024-06-15\ at\ 00.03.58.jpeg'); /* Ensure the correct path */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  
+  height: 770px; /* Consider using 100vh for full viewport height */
+  
+}
+
+.serviceContainer{
+  padding: 20px;
+  margin: 0px;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.services-list div{
+  background: #262626;
+  background-color:white;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+ 
+}
+
+.services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+
+.services-list div h2{
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+
+/*-------------------------------------------------- customer---------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(lightblue, white);
+    /* margin: 0; */
+    padding: 0;
+  
+    height: 100vh;
+   
+    
+  }
+  
+  .form {
+    max-width: 100%;
+    margin: 20px;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+  }
+  .form input{
+    width: 100%;
+    height: 20px;
+  }
+  
+
+  .btn-sec button{
+    padding: 5px;
+    gap: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+   border: none;
+   box-shadow: #2b2c2c 0px 0px 10px 0px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+  .btn-sec :nth-child(1){
+    background-color: yellow;
+  }
+  .btn-sec :nth-child(2){
+    background-color:red;
+  }
+  .btn-sec :nth-child(3){
+    background-color: rgb(247, 89, 194);
+  }
+  .btn-sec :nth-child(4){
+    background-color: rgb(247, 189, 102);
+  }
+  .btn-sec :nth-child(5){
+    background-color: aqua;
+  }
+  .tableDive{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px
+  }
+  
+
+  #customerSection table ,#itemSection table{
+    
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin: 2px;
+    
+    
+
+}
+#customerSection table th ,#itemSection table th{
+    /* background-color: #418352; */
+    background-color:gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid #fdfcfc; */
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 18px;
+}
+.tableRow tr td, .customerTableBody tr td{
+    background-color: #d8d4d42a;
+    padding: 10px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+/*----------------------------------------- orders ---------------------------------------- */
+
+
+
+.card-container{
+  padding-top: 20px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 30% 40% 27%;
+
+}
+.card-container .card-invoice-details { 
+  border: 1px solid black;
+}
+.card-container .card-item-select{
+  border: 1px solid black;
+}
+
+.card{
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.card-head{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+}
+
+.card-head p{
+  color: white;
+  padding-left: 20px;
+}
+
+.card-content{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+#CustomerAddress{
+  width: 100%;
+}
+
+.card-content textarea{
+  margin-top: -15px;
+}
+
+.card-content-itemdetails-tab{
+  display: grid;
+  grid-template-columns: 50% 28% 22%;
+  gap: 100px;
+}
+
+#ItemName{
+  width: 180px;
+}
+
+
+
+#ItemQty{
+  width: 80px;
+}
+
+.order-quantity-div{
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+#OrderQuantity{
+  width: 180%;
+}
+
+.add-item-button-div{
+  margin-left: 459px;
+  margin-top: 23px;
+}
+
+.add-item-button{
+  color: white;
+  height: 28px;
+  width: 80px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.bill-card-content{
+  padding-left: 15px;
+}
+
+.total{
+  color: rgb(44, 162, 236);
+  font-size: 25px;
+}
+
+.sub-total{
+  color: red;
+  margin-top: -18px;
+  font-size: 25px;
+}
+
+.cash-discount-div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#Balance{
+  width: 91.5%;
+}
+
+.purchase-button-div{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.purchase-button{
+  height: 28px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(4, 163, 4);
+}
+
+.order-table-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+#order-table{
+  /* border: 1px solid black; */
+  border: 1px solid black;
+}
+
+#order-table thead{
+  background-color: grey;
+  color: white;
+  
+ 
+}
+
+#order-table thead tr th{
+  color: white;
+  font-size: 17px;
+  /* font-weight: 50;
+  font-family:'Times New Roman', Times, serif; */
+  font-family: monospace;
+  font-size: 18px;
+  
+  padding-left: 15px;
+
+  height: 3vw;
+  border: 1px solid aliceblue;
+  text-align: left;
+}
+
+.itemcode-column{
+  width: 10vw;
+}
+.itemname-column{
+  width: 15vw;
+}
+.price-column{
+  width: 10vw;
+}
+.quantity-column{
+  width: 12vw;
+}
+.total-column{
+  width: 10vw;
+}
+
+#order-section textarea{
+  text-align: left;
+  font-size: 20px;
+  width: 180px;
+  height: 30.5px;
+}
+
+
+
+#order-section .card-item-select textarea{
+  padding-top: 6px;
+  font-size: 20px;
+}
+
+#order-section #SelectItemCode{
+  width: 220px;
+}
+
+#order-section #ItemPrice{
+  width: 150px;
+}
+
+#order-section #ItemQty{
+  width: 100px;
+}
+
+#order-section #OrderQuantity{
+  width: 530px;
+}
+
+#date-picker{
+  font-size: 15px;
+  margin-top: -20px;
+  width: 180px;
+  height: 30.5px;
+}
+
+#down-arrow-icon{
+  padding-top: -20px;
+  margin-left: -30px;
+}
+
+#customer-select-field{
+  padding-top: -10px;
+  width: 180px;
+  height: 20px;
+}
+
+#Item{
+  margin-top: -10px;
+  width: 182px;
+  height: 30px;
+}
+
+
+

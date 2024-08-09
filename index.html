@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS_System</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Home</h1>
+        </div>
+
+        <div class="nav-bar">
+            <ul>
+                
+                    <li><a href="#home"  class="nav-item">Home</a></li>
+                
+                
+                    <li><a href="#customerSection" class="nav-item">Customer</a></li>
+                
+                
+                    <li><a href="#itemSection" class="nav-item">Item</a></li>
+                
+                
+                    <li><a href="#ordersSection" class="nav-item" >Order</a></li>
+                        
+            </ul> 
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="serviceContainer">
+            
+            <div class="services-list">
+                <div>
+                    
+                    <h2>Customers</h2>
+                    <!-- <p>I will make whole web-site to fulfill your requiremetnts.</p> -->
+                </div>
+
+                <div>
+                    
+                    <h2>Items</h2>
+                    <!-- <p>I will make softwares for pc if you required.</p> -->
+                </div>
+
+                <div>
+                    
+                    <h2>Orders</h2>
+                    <!-- <p>And also I can make android or ios apps as well.</p> -->
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-------------------------------------------- customer -------------------------------------->
+
+    <section id="customerSection">
+        <div class="form">
+
+            <div class="form-header">
+              <h1>Customer Registration</h1>
+            </div>
+      
+           <div class="input-sec">
+      
+                <div class="input-field">
+                <p>Customer ID</p>
+                <input type="text" name="" id="cus-ID">
+                <h5 class="invalidCustId"></h5>
+                </div>
+                
+            
+                <div class="input-field">
+                <p>Customer Name</p>
+                <input type="text" name="" id="cus-name">
+                <h5 class="invalidCustName"></h5>
+                </div>
+                
+            
+                <div class="input-field">
+                <p>Customer Address</p>
+                <input type="text" name="" id="cus-address">
+                <h5 class="invalidCustAddress"></h5>
+                </div>
+            
+            
+                <div class="input-field">
+                <p>Customer Salary</p>
+                <input type="text" name="" id="cus-salary">
+                <h5 class="invalidCustSalary"></h5>
+                </div>
+    
+            </div>
+           
+      
+            <div class="btn-sec">
+              <button id="save-cus">Save Customer</button>
+              <button id="remove-cus">Remove</button>
+              <button id="update-cus">Update</button>
+              <button id="getall-cus">Get All</button>
+              <button id="clear">Clear All</button>
+            </div>
+        </div>
+      
+        <div class="tableDive">
+                <table id="cus-table">
+                    <thead>
+                        <tr>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Salary</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody class="customerTableBody">
+                        <!-- <tr>
+                          <td>C-001</td>
+                          <td>Chandrapala SK</td>
+                          <td>Galle,Yakkalmulla</td>
+                          <td>50000.00</td>
+                      </tr>
+                      <tr>
+                          <td>C-002</td>
+                          <td>K. Somapala</td>
+                          <td>Colombo,7</td>
+                          <td>100000.00</td>
+                      </tr> -->
+                      </tbody>
+                </table>
+          </div>
+
+         
+
+          
+            
+    </section>
+
+<!-------------------------------------------- Item -------------------------------------->
+
+    <section id="itemSection">
+        
+            <div class="form">
+    
+                <div class="form-header">
+                  <h1>Item Form</h1>
+                </div>
+          
+               <div class="input-sec">
+          
+                    <div class="input-field">
+                    <p>Item code</p>
+                    <input type="text" name="" id="item_code">
+                    <p id="error" class="itemCodeError"></p>
+                    </div>
+                    
+                
+                    <div class="input-field">
+                    <p>Item Name</p>
+                    <input type="text" name="" id="item-name">
+                    <p id="error" class="invalidItemName"></p>
+                    </div>
+                    
+                
+                    <div class="input-field">
+                    <p>Item qty</p>
+                    <input type="text" name="" id="item_qty">
+                    <p id="error" class="invalidItemQty" ></p>
+                    </div>
+                
+                
+                    <div class="input-field">
+                    <p>Unit price</p>
+                    <input type="text" name="" id="unitPrice">
+                    <p id="error" class="invalidItemUnitPrice"></p>
+                    </div>
+        
+                </div>
+               
+          
+                <div class="btn-sec">
+                  <button id="save-Item">Save Item</button>
+                  <button id="remove-Item">Remove</button>
+                  <button id="update-Item">Update</button>
+                  <button id="getall-Item">Get All</button>
+                  <button id="clear">Clear All</button>
+                </div>
+            </div>
+          
+            <div class="tableDive">
+                    <table id="item-table">
+                        <thead>
+                            <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Item qty</th>
+                            <th>Unit price</th>
+                            </tr>
+                        </thead>
+            
+                        <tbody class="tableRow">
+                           
+                          </tbody>
+                    </table>
+              </div>
+                
+        
+    
+    </section>
+
+
+      <!-------------------------------------------- order -------------------------------------->
+
+      <section id="ordersSection">
+        <div class="card-container">
+            <div class="card-invoice-details">
+                <div class="card-head">
+                    <p>Invoice Details</p>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <p>Order ID : </p>
+                        
+                        <textarea name="order id" id="OrderId" ></textarea>
+                        
+                        
+                    </div>
+                    <div>
+                        <p>Date :</p>
+                        <!-- <textarea name="date" id="Date" ></textarea> -->
+                        <input type="date" id="date-picker">
+                    </div>
+                    <div>
+                        <p>Customer :</p>
+                        <select name="customer" id="customer-select-field">
+                            <option value="" disabled selected>Select Customer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Customer ID :</p>
+                        <textarea name="customer id" id="CustomerId"></textarea>
+                    </div>
+                    <div>
+                        <p>Name :</p>
+                        <textarea name="customer name" id="CustomerName"></textarea>
+                    </div>
+                    <div>
+                        <p>Salary : </p>
+                        <textarea name="salary" id="CustomerSalary"></textarea>
+                    </div>
+                    <div>
+                        <p>Address :</p>
+                        <textarea name="customer address" id="CustomerAddress"></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-item-select">
+                <div class="card-head">
+                    <p>Item Select</p>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <p>Item :</p>
+                        
+                        <select name="item" id="item-select-field">
+                            <option value="" disabled selected>Select Item</option>
+                        </select>
+                        <!-- <img src="/assets/down arrow.jpg" alt=""> -->
+                        
+                    </div>
+                    <div>
+                        <p>ItemCode</p>
+                        <textarea name="item code" id="ItemCode" ></textarea>
+                    </div>
+                    <div class="card-content-itemdetails-tab">
+                        <div>
+                            <p>Item Name :</p>
+                            <textarea name="item name" id="ItemName"></textarea>
+                        </div>
+                        <div>
+                            <p>Price :</p>
+                            <textarea name="item price" id="ItemPrice"></textarea>
+                        </div>
+                        <div>
+                            <p>QtyOnH :</p>
+                            <textarea name="qty on hand" id="ItemQty"></textarea>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <div class="order-quantity-div">
+                        <p>Order Quantity :</p>
+                        <textarea name="order quantity" id="OrderQuantity"></textarea>
+                    </div>
+                    <br>
+                    <div class="add-item-button-div">
+                        <button type="button" class="add-item-button">Add Item</button>
+                    </div>
+                </div>
+                
+    
+                
+    
+            </div>
+    
+            <div class="card">
+                <div class="bill-card-content">
+                    <p class="total">Total : <label for="">00.0</label>Rs/=</p>
+                    <p class="sub-total">SubTotal : <label for="">00.0</label>Rs/=</p>
+    
+                    <div class="cash-discount-div">
+                        <div>
+                            <p>Cash :</p>
+                            <textarea name="cash" id="Cash"></textarea>
+                        </div>
+                        <div>
+                            <p>Discount : </p>
+                            <textarea name="discount" id="Discount"></textarea>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>Balance :</p>
+                        <textarea name="balance" id="Balance"></textarea>
+                    </div>
+    
+                    <div class="purchase-button-div">
+                        <button class="purchase-button">Purchase</button>
+                    </div>
+                </div>
+            
+                
+            </div>
+        </div>
+    
+        <div class="order-table-container">
+            <table id="order-table"> 
+                <thead>
+                    <tr>
+                        <th class="itemcode-column">Item Code</th>
+                        <th class="itemname-column">Item Name</th>
+                        <th class="price-column">Price</th>
+                        <th class="quantity-column">Quantity</th>
+                        <th class="total-column">Total</th>
+                        <th class="total-column">Action</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="order-table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    </section>
+    <script type="module" src="controller/customerController.js"></script>
+    <script type="module" src="controller/orderController.js"></script>
+    <script type="module" src="controller/indexController.js"></script>
+    <script type="module" src="controller/itemController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- <script>
+        $(document).ready(function(){
+          $('#home').show();
+      
+          $('.nav-item').click(function(event){
+              event.preventDefault();
+      
+              $('section').hide();
+      
+              var targetSection = $(this).attr('href');
+      
+              $(targetSection).show();
+              switch(targetSection){
+                  case '#customerSection':
+                      // $('.sectionName').text('Customer Manage');
+                      break;
+                  case '#itemSection':
+                      // $('.sectionName').text('Item Manage');
+                      break;
+                  case '#ordersSection':
+                      // $('.sectionName').text('Order Manage');
+                      break;
+                  default:
+                      // $('.sectionName').text('Home Page');
+              }
+          });
+      });
+      </script> -->
+
+</body>
+
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="/controller/CustomerController.js"></script> -->
+
+</html>
